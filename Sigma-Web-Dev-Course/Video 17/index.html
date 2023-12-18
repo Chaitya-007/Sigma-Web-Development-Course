@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        div
+        {
+            color: red;
+        }
+
+        /* Class Selector */
+        .red
+        {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #orange
+        {
+            color: orange;
+        }
+
+        /* Child Selector */
+        div > p
+        {
+            color: green;
+            background-color: yellow;
+        }
+
+        /* Universal Selector */
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        This is div
+    </div>
+
+    <div id="orange">
+        This is another div
+    </div>
+
+    <div>
+        <p>This is para under div</p>
+    </div>
+</body>
+</html>
