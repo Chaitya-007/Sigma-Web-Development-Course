@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a music website designed in user friendly way">
+    <title>Website - Audios and Videos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Chaitya Studio </h1>
+        <h1>Presents</h1>
+        <h1>"Audios and Videos"</h1>
+        
+        <p>This website contains 6 Audio and 6 Video files.</p>
+    </header>
+
+    <main>
+        <section>
+
+            <table>
+                <tr>
+                    <th>Audio</th>
+                    <th>Video</th>
+                </tr>
+                <tr>
+                    <td>kgf_bass_boosted</td>
+                    <td>WIN_20210924_19_55_29_Pro.mp4</td>
+                </tr>
+                <tr>
+                    <td>kgf 2 monster</td>
+                    <td>WIN_20221030_19_53_05_Pro.mp4</td>
+                </tr>
+                <tr>
+                    <td>kgf chapter 2</td>
+                    <td>WIN_20221203_20_52_18_Pro.mp4</td>
+                </tr>
+                <tr>
+                    <td>kgf rocky climax</td>
+                    <td>August14,Raazi,Ae watan watan....mp4</td>
+                </tr>
+                <tr>
+                    <td>kgf 2 themen</td>
+                    <td>Chaitanya(SYCOA12)-Piano_Instrumental.mp4</td>
+                </tr>
+                <tr>
+                    <td>toofan song</td>
+                    <td>Siddhi_IMG_0615.MOV</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section>
+            
+        <h2>Audios</h2>
+        <article>
+            <h3>Audio 1</h3>
+            <p>kgf_bass_boosted</p>
+            <audio src="1_kgf_bass_boosted_ringt.mp3" controls></audio>
+        </article>
+
+        
+        <article>
+            <h3>Audio 2</h3>
+            <p>kgf 2 monster</p>
+            <audio src="2_kgf_2_monster_song.mp3" controls>kgf 2 monster
+            </audio>
+        </article>
+
+        <article>
+            <h3>Audio 3</h3>
+            <p>kgf chapter 2</p>
+            <audio src="3_kgf_chapter_2.mp3" controls>kgf chapter 2</audio>
+        </article>
+
+        <article>
+            <h3>Audio 4</h3>
+            <p>kgf rocky climax</p>
+            <audio src="4_kgf_rocky_climax.mp3" controls>kgf rocky climax</audio>
+        </article>
+
+        <article>
+            <h3>Audio 5</h3>
+            <p>kgf 2 themen</p>
+            <audio src="5_kgf_chapter_2_theme.mp3" controls>kgf 2 themen</audio>
+        </article>
+
+        <article>
+            <h3>Audio 6</h3>
+            <p>toofan song</p>
+        <audio src="6_toofan_kgf_2.mp3" controls>toofan song</audio>
+        </article>
+        
+        </section>
+
+        <section>
+            <h2>Videos</h2>
+            
+            <video height="300" width="300" src="WIN_20210924_19_55_29_Pro.mp4" controls muted loop> This is prasanna voice</video>
+
+            <video height="300" width="300" src="WIN_20221030_19_53_05_Pro.mp4" controls muted poster="2_movie.jfif" loop> </video>
+
+            <video height="300" width="300" src="WIN_20221203_20_52_18_Pro.mp4" controls muted autoplay   loop></video>
+
+            <video height="300" width="300" src="August14,Raazi,Ae watan watan....mp4" controls muted autoplay   loop></video>
+
+            <video height="300" width="300" src="Chaitanya(SYCOA12)-Piano_Instrumental.mp4" controls muted autoplay   loop></video>
+
+            <video src="Siddhi_IMG_0615.MOV" height="300" width="300" controls muted autoplay loop> </video>
+        </section>
+
+    <section>
+        <h1 style="color: blueviolet; text-align: left; text-decoration: underline; font-weight: bold;">
+             
+            Feedback For Website</h1>
+        <form action="post" autocomplete="off">
+
+            <div>
+                <label for="name" style="font-weight: bold;">Please enter your name</label>
+            </div>
+            <div>
+                <input type="text" id="name" name="name" autocomplete="username" placeholder="Enter your name here"></input>
+            </div>
+            <br>
+            <div>
+                <label for="myEmail" style="font-weight: bold;">Please enter your email</label>
+            </div>
+            <div>
+                <input type="email" name="myEmail" id="myEmail" autocomplete="email" placeholder="Enter your email here">
+            </div>
+            <br>
+            <div>
+                <label for="myDate" style="font-weight: bold;">Enter DOB</label>
+            </div>
+            <div>
+                <input type= "date" name= "myDate" id= "myDate" autocomplete="bday">
+            </div>
+            <br>
+            <div>
+                <label for="myNumber" style="font-weight: bold;">Enter your mobile number</label>
+            </div>
+            <div>
+                <input type="tel" name="myNumber" id="myNumber" autocomplete="tel">
+            </div>
+          <br>
+          <div>
+            <label for="myEligibility" style="font-weight: bold;">Are you satisfied with the audios and videos ?</label>
+             <input type="checkbox" name="myEligibility" id="myEligibility">
+        </div>
+        <br>
+        <div>
+            <label for="myGender" style="font-weight: bold;">Select your Gender</label>
+        </div>
+        <div>
+            <input type="radio" name="myGender" >Male 
+            <input type="radio" name="myGender">Female
+            <input type="radio" name="myGender">Others
+        </div>
+        <br>
+
+        <div>
+            <label for="country" style="font-weight: bold;">Select your country</label>
+        </div>
+        <div>
+            <select name="myCountry" id="country">
+                <option value="ind">India</option>
+                <option value="usa">USA</option>
+                <option value="aus">Australia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+        <label for="comment" style="font-weight: bold;">Tell us about yourself</label>
+        </div>
+        <div>
+            <textarea name="myText" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div> 
+
+        <br>
+             <div>
+                <label for="Button" style="font-weight: bold;">Click here to submit</label>
+            </div> 
+            <div>
+                <input type="submit" value="Submit Now">
+                <input type="reset"  value="Reset Now">
+          </div>
+
+        </form>
+    </section> 
+</main>
+
+    
+    <br>
+    <footer style="font-weight: bold;">
+        <h3>Website by:</h3>
+        <p style="color: brown;">Chaitya College of Arts, Commerce and Science</p>
+        Copyrigths reserved @ 2021
+    </footer>
+
+</body>
+</html>
