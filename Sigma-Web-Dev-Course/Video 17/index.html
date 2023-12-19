@@ -30,12 +30,36 @@
             background-color: yellow;
         }
 
+        /* Descendant Selector */
+        div p
+        {
+            color: violet;
+            background-color: green;
+        }
+
         /* Universal Selector */
         *
         {
             margin: 0;
             padding: 0;
         }
+
+        a:link
+        {
+            color: red;
+        }
+
+        a:visited
+        {
+            color: green;
+        }
+
+        a:active
+        {
+            color: orange;
+        }
+
+
     </style>
 </head>
 <body>
@@ -48,7 +72,13 @@
     </div>
 
     <div>
+        <span>
+            This is span
+            <p>This is para under span</p>
+        </span>
         <p>This is para under div</p>
     </div>
+
+    <a href="https://www.google.com">Google</a>
 </body>
 </html>
