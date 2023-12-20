@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website contains description about Specifity">
+    <title>Specifity</title>
+    <style>
+        /* The specifity is the way browser decides which css property value will take precedence over another. */
+        /* The specifity is based on the matching rules which are composed of different sorts of CSS selectors. */
+
+        /* The specifity of element selector is 1 */
+        h1{
+            /* color : blue !important; */
+            color: blue;
+        }
+
+        /* The specifity of class selector is 10 */
+        .cred{
+            color: red;
+        }
+        
+        /* The specifity of class selector is 10 */
+        /* Now the specifity became 1+10 = 11 */
+        h1.cpurple{
+            color: purple;
+        }
+
+        /* The specifity of class selector is 10 */
+        .cyellow{
+            color: yellow;
+        }
+
+        /* Out of element and class selector, class selector is give more priority */
+        /* Since we have same type of class selector the one which is at bottom wins */
+        /* Inline css dominate all types of selectors */
+        /* If any field is marked important it will be give high priority */
+
+        /* Inline css > ID selector > Class selector > Element selector */
+        /* This is an example of attribute selector */
+        [data-x =a]
+        {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cred cyellow cpurple" data-x="a">This is heading</h1>
+</body>
+</html>
