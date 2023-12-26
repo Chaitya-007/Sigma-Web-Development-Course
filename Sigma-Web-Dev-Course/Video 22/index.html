@@ -10,14 +10,53 @@
             padding: 0;
         }
 
+        html
+        {
+            font-size: 12px;
+        }
+
         .box
         {
             box-sizing: border-box;
             background-color: aquamarine;
             border: 2px solid black;
-            /* width: 133px; */
-            /* width: 2048px; */
-            width: 100vw;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            
+        }
+
+        .container
+        {
+            box-sizing: border-box;
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 23px auto;
+            font-size: 18px;
+            min-height: 80vh;
+        }
+
+        .container > div{
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .container > div > div{
+            font-size: 1em;
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .mycont
+        {
+            border: 2px solid black;
+            color: rgb(14, 14, 11);
+            width: 80vw;
+            margin: 23px auto;
+
         }
 
     </style>
@@ -25,6 +64,21 @@
 <body>
     <div class="box">
         This is heading
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, omnis beatae! Maiores inventore reprehenderit aliquam fugiat animi laborum quae non dignissimos suscipit at vitae eos, rerum vel temporibus placeat quo odio quisquam cumque perferendis ipsum quos enim ex aperiam. Quidem fuga explicabo nostrum porro error. Natus, rem alias doloribus deleniti quisquam quaerat ea dolor esse itaque.
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora, suscipit similique cumque praesentium eligendi doloribus eos repellendus dolores temporibus totam non quaerat.
+            </div>
+        </div>
+         
+        
+    </div>
+
+    <div class="mycont">
+        this is mycont
     </div>
 </body>
 </html> 
